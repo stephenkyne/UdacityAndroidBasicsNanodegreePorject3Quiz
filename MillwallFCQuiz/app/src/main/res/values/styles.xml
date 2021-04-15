@@ -1,0 +1,174 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <!-- Colours the used by the team on logos ect.. -->
+        <item name="colorPrimary">#00194A</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <!--
+        // LinearLayout style for the sub LinearLayout that hold questions and answers
+    -->
+    <style name="sub_linear_layout">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:paddingBottom">16dp</item>
+        <!--<item name="android:layout_gravity">center_horizontal</item> -->
+    </style>
+
+    <!--
+        // The title at the top of the app, next to the photo
+    -->
+    <style name="header_top_app">
+        <item name="android:textSize">36sp</item>
+        <!-- Colours the used by the team on logos ect.. -->
+        <item name="android:textColor">#00194A</item>
+        <item name="android:paddingLeft">16dp</item>
+    </style>
+
+    <!--
+       // Asking the user to enter their name
+   -->
+    <style name="name_text_view">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">24sp</item>
+    </style>
+
+    <!--
+        // EditText Name enter areas
+    -->
+    <style name="name_edit_text">
+        <item name="android:textSize">16sp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:hint">@string/name_edit_text_hint</item>
+        <item name="android:inputType">textCapSentences</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:maxLength">20</item>
+    </style>
+    <!--
+        // The Line Bar used as a break.
+    -->
+    <style name="ColourBar">
+        <!-- Colours the used by the team on logos ect.. -->
+        <item name="android:background">#00194A</item>
+        <item name="android:layout_height">4dp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_marginLeft">8dp</item>
+        <item name="android:layout_marginRight">8dp</item>
+        <item name="android:layout_marginBottom">8dp</item>
+    </style>
+
+    <!--
+        // The Question Number, such as Q1 are styled
+    -->
+    <style name="question_numbers">
+        <item name="android:textSize">24sp</item>
+        <item name="android:layout_width">50dp</item>
+        <item name="android:layout_height">40dp</item>
+        <!-- Top of 10dp gives the text next to it a better look -->
+        <item name="android:layout_marginTop">10dp</item>
+        <item name="android:layout_marginBottom">8dp</item>
+
+        <!-- Colours the used by the team in the stadium -->
+        <item name="android:background">#7888F3</item>
+        <item name="android:textColor">#F9F871</item>
+        <item name="android:gravity">center_horizontal|center_vertical</item>
+    </style>
+
+    <!--
+        // Where the question is asked
+        // TextView style
+    -->
+    <style name="question_text">
+        <item name="android:textSize">16sp</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">top</item>
+        <item name="android:layout_marginLeft">16dp</item>
+
+
+    </style>
+
+    <!--
+       // RadioGroup answers.
+   -->
+    <style name="radio_group_answer">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:orientation">horizontal</item>
+    </style>
+
+    <!--
+      // Checkbox answers.
+  -->
+    <style name="check_box_answers">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+    </style>
+
+    <!--
+       // Radio button answers.
+   -->
+    <style name="radio_button_answer">
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textAppearance">?android:textAppearanceMedium</item>
+    </style>
+
+    <!--
+        // Results of the Quiz are shared here.
+    -->
+    <style name="results_textView">
+        <item name="android:textSize">24sp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">100dp</item>
+        <item name="android:layout_marginLeft">8dp</item>
+        <item name="android:layout_marginRight">8dp</item>
+    </style>
+
+    <!--
+        // EditText answer areas
+    -->
+    <style name="edit_text">
+        <item name="android:textSize">16sp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:hint">@string/edit_text_hint</item>
+        <item name="android:inputType">text</item>
+        <item name="android:maxLines">1</item>
+        <!-- Caps the length of char to 10 -->
+        <item name="android:maxLength">10</item>
+    </style>
+
+    <!--
+        // This styles both the buttons
+    -->
+    <style name="button_style">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">16dp</item>
+        <item name="android:layout_marginRight">16dp</item>
+        <item name="android:layout_marginTop">16dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:textAllCaps">true</item>
+    </style>
+
+    <!--
+        // This styles the details of the photo at the bottom of the app.
+    -->
+    <style name="photo_details_style">
+        <item name="android:textSize">8sp</item>
+        <item name="android:layout_marginTop">16dp</item>
+        <!-- Used the method below as it is unlikly to cause any issues -->
+        <item name="android:textAlignment">center</item>
+    </style>
+
+</resources>

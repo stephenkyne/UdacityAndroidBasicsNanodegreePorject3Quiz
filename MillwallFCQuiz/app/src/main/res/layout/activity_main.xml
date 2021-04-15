@@ -1,0 +1,587 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="16dp"
+        android:paddingTop="16dp"
+        android:paddingRight="16dp"
+        android:paddingBottom="16dp"
+        tools:context=".MainActivity">
+
+        <LinearLayout style="@style/sub_linear_layout">
+
+            <!--
+                Millwall logo
+                From Wikimedia Commons, the free media repository
+                author: StewartWhite99
+                source: https://commons.wikimedia.org/wiki/File:Milwall_Crest.svg
+            -->
+            <ImageView
+                android:id="@+id/logo_pic"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@drawable/milwall_crest" />
+
+            <TextView
+                style="@style/header_top_app"
+                android:layout_width="wrap_content"
+                android:layout_height="60dp"
+                android:text="@string/millwall" />
+
+        </LinearLayout>
+
+        <TextView style="@style/ColourBar" />
+        <!--
+            // Enter name area
+        -->
+        <LinearLayout
+            style="@style/sub_linear_layout"
+            android:layout_gravity="center_vertical">
+
+            <TextView
+                style="@style/name_text_view"
+                android:layout_width="wrap_content"
+                android:text="@string/name_text_view" />
+
+            <EditText
+                android:id="@+id/user_name"
+                style="@style/name_edit_text" />
+
+        </LinearLayout>
+
+        <!--
+            Question 1
+         -->
+        <LinearLayout style="@style/sub_linear_layout">
+
+            <TextView
+                android:id="@+id/question_one"
+                style="@style/question_numbers"
+                android:text="@string/Q1" />
+
+            <TextView
+                style="@style/question_text"
+
+                android:text="@string/question_one_champions" />
+
+        </LinearLayout>
+
+        <!--
+            Question 1
+            Answer area
+         -->
+
+        <LinearLayout style="@style/sub_linear_layout">
+
+            <RadioGroup
+                android:id="@+id/rg_champions"
+                style="@style/radio_group_answer">
+
+                <RadioButton
+                    android:id="@+id/rb_champ_4"
+                    style="@style/radio_button_answer"
+                    android:onClick="onRgChampionsClicked"
+                    android:text="@string/check_box_q1_1" />
+
+                <!-- This is correct -->
+                <RadioButton
+                    android:id="@+id/rb_champ_5"
+                    style="@style/radio_button_answer"
+                    android:onClick="onRgChampionsClicked"
+                    android:text="@string/check_box_q1_2" />
+
+                <RadioButton
+                    android:id="@+id/rb_champ_6"
+                    style="@style/radio_button_answer"
+                    android:onClick="onRgChampionsClicked"
+                    android:text="@string/check_box_q1_3" />
+
+                <RadioButton
+                    android:id="@+id/rb_champ_7"
+                    style="@style/radio_button_answer"
+                    android:onClick="onRgChampionsClicked"
+                    android:text="@string/check_box_q1_4" />
+
+            </RadioGroup>
+
+        </LinearLayout>
+
+        <TextView style="@style/ColourBar" />
+
+        <!--
+            Question 2
+         -->
+        <LinearLayout style="@style/sub_linear_layout">
+
+            <TextView
+                style="@style/question_numbers"
+                android:text="@string/Q2" />
+
+            <TextView
+                style="@style/question_text"
+                android:text="@string/question_two_promoted" />
+
+        </LinearLayout>
+
+        <!--
+           Question 2
+           Answer area
+        -->
+
+        <LinearLayout style="@style/sub_linear_layout">
+
+            <RadioGroup
+                android:id="@+id/rg_promted"
+                style="@style/radio_group_answer">
+
+                <RadioButton
+                    android:id="@+id/radio_promted_9"
+                    style="@style/radio_button_answer"
+                    android:onClick="onRgPromtedClicked"
+                    android:text="@string/check_box_q2_1" />
+
+                <RadioButton
+                    android:id="@+id/radio_promted_10"
+                    style="@style/radio_button_answer"
+                    android:onClick="onRgPromtedClicked"
+                    android:text="@string/check_box_q2_2" />
+                <!-- This is correct -->
+                <RadioButton
+                    android:id="@+id/radio_promted_11"
+                    style="@style/radio_button_answer"
+                    android:onClick="onRgPromtedClicked"
+                    android:text="@string/check_box_q2_3" />
+
+                <RadioButton
+                    android:id="@+id/radio_promted_12"
+                    style="@style/radio_button_answer"
+                    android:onClick="onRgPromtedClicked"
+                    android:text="@string/check_box_q2_4" />
+
+            </RadioGroup>
+
+
+        </LinearLayout>
+
+        <TextView style="@style/ColourBar" />
+
+        <!--
+            Question 3
+         -->
+        <LinearLayout style="@style/sub_linear_layout">
+
+            <TextView
+                style="@style/question_numbers"
+                android:text="@string/Q3" />
+
+            <TextView
+                style="@style/question_text"
+                android:text="@string/question_three_nickname" />
+
+        </LinearLayout>
+
+
+        <!--
+           // Question 3
+           // answer area
+        -->
+        <LinearLayout style="@style/sub_linear_layout">
+
+            <EditText
+                android:id="@+id/edit_text_nick_name"
+                style="@style/edit_text" />
+
+        </LinearLayout>
+
+        <TextView style="@style/ColourBar" />
+
+        <!--
+           // Question 4
+        -->
+        <LinearLayout style="@style/sub_linear_layout">
+
+            <TextView
+                style="@style/question_numbers"
+                android:text="@string/Q4" />
+
+            <TextView
+                style="@style/question_text"
+                android:text="@string/question_four_rivalry" />
+
+        </LinearLayout>
+
+        <!--
+            // Question 4 answer area
+        -->
+
+        <LinearLayout style="@style/sub_linear_layout">
+
+            <RadioGroup
+                android:id="@+id/rg_rivalry"
+                style="@style/radio_group_answer">
+
+                <RadioButton
+                    android:id="@+id/radio_rivalry_team_a"
+                    style="@style/radio_button_answer"
+                    android:onClick="onRgRivalryClicked"
+                    android:text="@string/team_a" />
+
+                <RadioButton
+                    android:id="@+id/radio_rivalry_team_b"
+                    style="@style/radio_button_answer"
+                    android:onClick="onRgRivalryClicked"
+                    android:text="@string/team_b" />
+
+                <RadioButton
+                    android:id="@+id/radio_rivalry_west_ham"
+                    style="@style/radio_button_answer"
+                    android:onClick="onRgRivalryClicked"
+                    android:text="@string/team_c" />
+
+            </RadioGroup>
+
+        </LinearLayout>
+
+        <TextView style="@style/ColourBar" />
+
+        <!--
+            Question 5
+         -->
+        <LinearLayout style="@style/sub_linear_layout">
+
+            <TextView
+                style="@style/question_numbers"
+                android:text="@string/Q5" />
+
+            <TextView
+                style="@style/question_text"
+                android:text="@string/question_five_relegated" />
+
+        </LinearLayout>
+
+        <!--
+           Question 5
+           Answer area
+        -->
+
+        <LinearLayout style="@style/sub_linear_layout">
+
+            <RadioGroup
+                android:id="@+id/rg_relegated"
+                style="@style/radio_group_answer">
+
+                <RadioButton
+                    android:id="@+id/radio_relegated_8"
+                    style="@style/radio_button_answer"
+                    android:onClick="onRgRelegatedClicked"
+                    android:text="@string/check_box_q4_1" />
+
+                <!-- This is correct -->
+                <RadioButton
+                    android:id="@+id/radio_relegated_9"
+                    style="@style/radio_button_answer"
+                    android:onClick="onRgRelegatedClicked"
+                    android:text="@string/check_box_q4_2" />
+
+                <RadioButton
+                    android:id="@+id/radio_relegated_10"
+                    style="@style/radio_button_answer"
+                    android:onClick="onRgRelegatedClicked"
+                    android:text="@string/check_box_q4_3" />
+
+                <RadioButton
+                    android:id="@+id/radio_relegated_11"
+                    style="@style/radio_button_answer"
+                    android:onClick="onRgRelegatedClicked"
+                    android:text="@string/check_box_q4_4" />
+
+            </RadioGroup>
+
+
+        </LinearLayout>
+
+        <TextView style="@style/ColourBar" />
+
+        <!--
+           // Question 6
+        -->
+        <LinearLayout style="@style/sub_linear_layout">
+
+            <TextView
+                style="@style/question_numbers"
+                android:text="@string/Q6" />
+
+            <TextView
+                style="@style/question_text"
+                android:text="@string/question_six_colours" />
+
+        </LinearLayout>
+
+        <!--
+            // Question 6 answer area
+        -->
+        <LinearLayout style="@style/sub_linear_layout">
+
+            <CheckBox
+                android:id="@+id/q6_check_box_1_blue"
+                style="@style/check_box_answers"
+                android:text="@string/check_box_1" />
+
+            <CheckBox
+                android:id="@+id/q6_check_box_2"
+                style="@style/check_box_answers"
+                android:text="@string/check_box_2" />
+
+            <CheckBox
+                android:id="@+id/q6_check_box_3_white"
+                style="@style/check_box_answers"
+                android:text="@string/check_box_3" />
+
+            <CheckBox
+                android:id="@+id/q6_check_box_4"
+                style="@style/check_box_answers"
+                android:text="@string/check_box_4" />
+
+        </LinearLayout>
+
+        <TextView style="@style/ColourBar" />
+
+        <!--
+            Question 7
+         -->
+        <LinearLayout style="@style/sub_linear_layout">
+
+            <TextView
+                style="@style/question_numbers"
+                android:text="@string/Q7" />
+
+            <TextView
+                style="@style/question_text"
+                android:text="@string/question_seven_founded" />
+
+        </LinearLayout>
+
+        <!--
+           Question 7
+           Answer area
+        -->
+
+        <LinearLayout style="@style/sub_linear_layout">
+
+            <RadioGroup
+                android:id="@+id/rg_founded"
+                style="@style/radio_group_answer">
+
+                <RadioButton
+                    android:id="@+id/radio_founded_1"
+                    style="@style/radio_button_answer"
+                    android:onClick="onRgFoundedClicked"
+                    android:text="@string/check_box_q7_1" />
+
+                <RadioButton
+                    android:id="@+id/radio_founded_2"
+                    style="@style/radio_button_answer"
+                    android:onClick="onRgFoundedClicked"
+                    android:text="@string/check_box_q7_2" />
+
+                <!-- This is correct -->
+                <RadioButton
+                    android:id="@+id/radio_founded_3"
+                    style="@style/radio_button_answer"
+                    android:onClick="onRgFoundedClicked"
+                    android:text="@string/check_box_q7_3" />
+
+                <RadioButton
+                    android:id="@+id/radio_founded_4"
+                    style="@style/radio_button_answer"
+                    android:onClick="onRgFoundedClicked"
+                    android:text="@string/check_box_q7_4" />
+
+            </RadioGroup>
+
+
+        </LinearLayout>
+
+        <TextView style="@style/ColourBar" />
+
+        <!--
+            Question 8
+         -->
+        <LinearLayout style="@style/sub_linear_layout">
+
+            <TextView
+                style="@style/question_numbers"
+                android:text="@string/Q8" />
+
+            <TextView
+                style="@style/question_text"
+                android:text="@string/question_eight_manager" />
+
+        </LinearLayout>
+
+        <!--
+           Question 8
+           Answer area
+        -->
+
+        <LinearLayout style="@style/sub_linear_layout">
+
+            <CheckBox
+                android:id="@+id/q8_check_box_1"
+                style="@style/check_box_answers"
+                android:layout_width="94dp"
+                android:layout_weight="1"
+                android:text="@string/q8_check_box_1" />
+
+            <CheckBox
+                android:id="@+id/q8_check_box_2"
+                style="@style/check_box_answers"
+                android:layout_weight="1"
+                android:text="@string/q8_check_box_2" />
+        </LinearLayout>
+
+        <!--
+            // broken up over two layers to make it look better
+        -->
+        <LinearLayout style="@style/sub_linear_layout">
+
+            <CheckBox
+                android:id="@+id/q8_check_box_3"
+                style="@style/check_box_answers"
+                android:layout_weight="1"
+                android:text="@string/q8_check_box_3" />
+
+            <CheckBox
+                android:id="@+id/q8_check_box_4"
+                style="@style/check_box_answers"
+                android:layout_weight="1"
+                android:text="@string/q8_check_box_4" />
+
+        </LinearLayout>
+
+        <TextView style="@style/ColourBar" />
+
+        <!--
+           Question 9
+        -->
+        <LinearLayout style="@style/sub_linear_layout">
+
+            <TextView
+                style="@style/question_numbers"
+                android:text="@string/Q9" />
+
+            <TextView
+                style="@style/question_text"
+                android:text="@string/question_nine_ground" />
+
+        </LinearLayout>
+
+
+        <!--
+           // Question 9
+           // answer area
+        -->
+        <LinearLayout style="@style/sub_linear_layout">
+
+            <EditText
+                android:id="@+id/edit_text_question_9"
+                style="@style/edit_text" />
+
+        </LinearLayout>
+
+        <TextView style="@style/ColourBar" />
+
+        <!--
+            Question 10
+         -->
+        <LinearLayout style="@style/sub_linear_layout">
+
+            <TextView
+                style="@style/question_numbers"
+                android:text="@string/Q10" />
+
+            <TextView
+                style="@style/question_text"
+                android:text="@string/question_ten_capacity" />
+
+        </LinearLayout>
+
+        <!--
+           Question 10
+           Answer area
+        -->
+
+        <LinearLayout style="@style/sub_linear_layout">
+
+            <RadioGroup
+                android:id="@+id/rg_capacity"
+                style="@style/radio_group_answer">
+
+                <RadioButton
+                    android:id="@+id/radio_capacity_1"
+                    style="@style/radio_button_answer"
+                    android:onClick="onRgCapacityClicked"
+                    android:text="@string/capacity_1" />
+
+                <RadioButton
+                    android:id="@+id/radio_capacity_2"
+                    style="@style/radio_button_answer"
+                    android:onClick="onRgCapacityClicked"
+                    android:text="@string/capacity_2" />
+
+
+                <RadioButton
+                    android:id="@+id/radio_capacity_3"
+                    style="@style/radio_button_answer"
+                    android:onClick="onRgCapacityClicked"
+                    android:text="@string/capacity_3" />
+
+            </RadioGroup>
+
+
+        </LinearLayout>
+
+        <TextView style="@style/ColourBar" />
+
+        <!--
+           // Results below
+           // this is where the results are displayed after the submit button is clicked.
+        -->
+        <TextView
+            android:id="@+id/results_textView"
+            style="@style/results_textView"
+            android:text="@string/reults_holding_text" />
+
+        <LinearLayout style="@style/sub_linear_layout">
+
+            <!-- checks the results and displays them  -->
+            <Button
+                style="@style/button_style"
+                android:onClick="getResults"
+                android:text="@string/reults" />
+
+            <!-- Resets the app and selects the edittext at the top of the app  -->
+            <Button
+                style="@style/button_style"
+                android:onClick="restQuiz"
+                android:text="@string/rest" />
+        </LinearLayout>
+
+
+        <TextView style="@style/ColourBar" />
+
+        <!-- Details about the photo are shared on the app itself  -->
+        <TextView
+            style="@style/photo_details_style"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/photo_details" />
+
+    </LinearLayout>
+</ScrollView>

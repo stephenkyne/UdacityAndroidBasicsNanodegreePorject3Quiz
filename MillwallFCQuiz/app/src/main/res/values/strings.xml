@@ -1,0 +1,135 @@
+<resources>
+    <string name="app_name">Millwall FC Quiz</string>
+
+    <!-- top of the app, next to the photo -->
+    <string name="millwall">Millwall Quiz"</string>
+
+    <!-- Name next to the edit text field for the users name -->
+    <string name="name_text_view">Name:</string>
+
+    <!-- Ask or hint for the user to enter their name. used in xml and java -->
+    <string name="name_edit_text_hint">Please enter your name</string>
+    <!--
+        // Question icon / makers
+        // in order
+    -->
+    <string name="Q1">Q1</string>
+    <string name="Q2">Q2</string>
+    <string name="Q3">Q3</string>
+    <string name="Q4">Q4</string>
+    <string name="Q5">Q5</string>
+    <string name="Q6">Q6</string>
+    <string name="Q7">Q7</string>
+    <string name="Q8">Q8</string>
+    <string name="Q9">Q9</string>
+    <string name="Q10">Q10</string>
+
+    <!--
+        // Questions text
+        // in order they are asked,
+        // uses question and number before text with question subject in it.
+        // Answers to questions from wikipedia  btw
+    -->
+    <string name="question_one_champions">How many Times have Millwall been Champions of their league? </string>
+    <string name="question_two_promoted">How many Times has Millwall been promoted to a higher league?</string>
+    <string name="question_three_nickname">What is Millwall’s nickname?</string>
+    <string name="question_four_rivalry">Which Team is Millwall’s major rivalry with?</string>
+    <string name="question_five_relegated">How many Times has Millwall been relegated?</string>
+    <string name="question_six_colours">What are the colours of Miwall’s kit? (select 2)</string>
+    <string name="question_seven_founded">What year was Millwall founded?</string>
+    <string name="question_eight_manager">Who were NOT manager for Millwall? (select 2)</string>
+    <string name="question_nine_ground">What is the name of the stadium Millwall play at?</string>
+    <string name="question_ten_capacity">What is the capacity of Millwall’s stadium? </string>
+
+    <!--
+        Questions 1 selection
+    -->
+    <string name="check_box_q1_1">4</string>
+    <!-- This is correct -->
+    <string name="check_box_q1_2">5</string>
+    <string name="check_box_q1_3">6</string>
+    <string name="check_box_q1_4">7</string>
+
+    <!--
+        Questions 2 selection
+    -->
+    <string name="check_box_q2_1">9</string>
+    <!-- This is correct -->
+    <string name="check_box_q2_2">10</string>
+    <string name="check_box_q2_3">11</string>
+    <string name="check_box_q2_4">12</string>
+
+    <!-- Questions 3 is entered by the user -->
+
+    <!--
+        // Questions 4 selections
+    -->
+    <string name="team_a">Charlton</string>
+    <string name="team_b">Ranger</string>
+    <!-- This is correct -->
+    <string name="team_c">West Ham</string>
+
+    <!--
+        Questions 5 selection
+    -->
+    <string name="check_box_q4_1">8</string>
+    <!-- This is correct -->
+    <string name="check_box_q4_2">9</string>
+    <string name="check_box_q4_3">10</string>
+    <string name="check_box_q4_4">11</string>
+
+    <!--
+        // Questions 6 selections
+    -->
+    <!-- This is correct -->
+    <string name="check_box_1">Blue</string>
+    <string name="check_box_2">Red</string>
+    <!-- This is correct -->
+    <string name="check_box_3">White</string>
+    <string name="check_box_4">Black</string>
+
+    <!--
+        Questions 7 selection
+    -->
+    <string name="check_box_q7_1">1985</string>
+    <string name="check_box_q7_2">1895</string>
+    <!-- This is correct -->
+    <string name="check_box_q7_3">1885</string>
+    <string name="check_box_q7_4">1785</string>
+
+    <!--
+        // Questions 8 selections
+    -->
+    <string name="q8_check_box_1">Alex Ferguson</string>
+    <string name="q8_check_box_2">Dennis Wise</string>
+    <!-- This is correct -->
+    <string name="q8_check_box_3">Pep Guardiola</string>
+    <!-- This is correct -->
+    <string name="q8_check_box_4">George Graham</string>
+
+    <!-- Questions 9 is entered by the user -->
+
+    <!--
+        // Questions 10 selections
+    -->
+    <string name="capacity_1">10,146</string>
+    <!-- This is correct -->
+    <string name="capacity_2">20,146</string>
+    <string name="capacity_3">30,146</string>
+
+    <!--
+        // Submit button
+    -->
+    <string name="reults">Submit</string>
+
+    <string name="edit_text_hint">Answer you\r question here!</string>
+
+    <!-- Results TextView where results are displayed -->
+    <string name="reults_holding_text">Results will appear here</string>
+
+    <!-- Rest button -->
+    <string name="rest">Rest</string>
+
+    <!-- Details about the source of the photo. -->
+    <string name="photo_details">"Photo by StewartWhite99 From Wikimedia Commons</string>
+</resources>
