@@ -16,6 +16,7 @@ The photo, the Millwall logo is free to use and taken from Wikimedia.
 - Source: https://commons.wikimedia.org/wiki/File:Milwall_Crest.svg
 
 ## Known Issues ##
+The code and methods used in this project are out of date. Below is a list of known issues.
 
 ### Layouts ###
 The layouts used are the old method, LinearLayout instead of the newer constraintlayout.
