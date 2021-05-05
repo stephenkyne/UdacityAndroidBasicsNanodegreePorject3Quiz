@@ -1,6 +1,6 @@
 # Android Basic Nanodegree #
 
-## Project 6, The Quiz #
+## Project 3, The Quiz #
 
 ### About The Project ###
 The Quiz is based on Millwall Football Club. It has 10 questions, of which 2 are EditText, 2 CheckBox, and 6 RadioGroups. There is also an EditText for the username. There are currently no known errors. __Known issues__ are listed below.
